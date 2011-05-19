@@ -1,10 +1,3 @@
-/*
-* tabletests - several functions to implement associative arrays in C
-*
-* Copyright 2006 Felix H. Dahlke <>
-* License: DWTFYLWI
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -126,24 +119,23 @@ return;
 
 printf("======================================\n") ;
 for (x = 0; x < tabl->number_of_elements; x++)
-printf("%s | %s\n======================================\n", tabl->column1[x], tabl->column2[x]);
+printf("%s => %s\n======================================\n", tabl->column1[x], tabl->column2[x]);
 }
 
 int main()
 {
 table *L2EPID = create_table();
-
-add_to_table(L2EPID, VBI_ID, 34214);
-add_to_table(L2EPID, tunnel_ID, "AV-2312");
-add_to_table(L2EPID, trust_flag, 3);
-add_to_table(L2EPID, priority_source, "random");
-add_to_table(L2EPID, def_priority, 21);
-add_to_table(L2EPID, L2_flag, 235213);
-add_to_table(L2EPID, PBB_L2EP, 919);
-
+add_to_table(L2EPID, "VBI_ID", "34214");
+add_to_table(L2EPID, "tunnel_ID", "2312");
+add_to_table(L2EPID, "trust_flag", "3");
+add_to_table(L2EPID, "priority_source", "53");
+add_to_table(L2EPID, "def_priority", "21");
+add_to_table(L2EPID, "L2_flag", "235213");
+add_to_table(L2EPID, "PBB_L2EP", "919");
 print_table(L2EPID);
-printf("Bob likes to %s.\n", get_column(hobbies, 2, "Bob"));
 
-delete_table(hobbies);
+
+//delete_table(L2EPID);
+exit(0);
 }
 
