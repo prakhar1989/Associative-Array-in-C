@@ -1,4 +1,9 @@
-Playing with Dhanam's project
+#Associative Array#
+
+##Two level implementation of the associative arrays##
+
+- Key mappings stored at last level
+- 1st level maps to correct L2EPIDs
 
 Output:
 
