@@ -131,17 +131,17 @@ printf("%s | %s\n======================================\n", tabl->column1[x], ta
 
 int main()
 {
-table *hobbies = create_table();
+table *L2EPID = create_table();
 
-add_to_table(hobbies, VBI_ID, 34214);
-add_to_table(hobbies, tunnel_ID, "AV-2312");
-add_to_table(hobbies, trust_flag, 3);
-add_to_table(hobbies, priority_source, "random");
-add_to_table(hobbies, def_priority, 21);
-add_to_table(hobbies, L2_flag, 235213);
-add_to_table(hobbies, PBB_L2EP, 919);
+add_to_table(L2EPID, VBI_ID, 34214);
+add_to_table(L2EPID, tunnel_ID, "AV-2312");
+add_to_table(L2EPID, trust_flag, 3);
+add_to_table(L2EPID, priority_source, "random");
+add_to_table(L2EPID, def_priority, 21);
+add_to_table(L2EPID, L2_flag, 235213);
+add_to_table(L2EPID, PBB_L2EP, 919);
 
-print_table(hobbies);
+print_table(L2EPID);
 printf("Bob likes to %s.\n", get_column(hobbies, 2, "Bob"));
 
 delete_table(hobbies);
