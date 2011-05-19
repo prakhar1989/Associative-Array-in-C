@@ -117,9 +117,8 @@ int x;
 if (!tabl)
 return;
 
-printf("======================================\n") ;
 for (x = 0; x < tabl->number_of_elements; x++)
-printf("%s => %s\n======================================\n", tabl->column1[x], tabl->column2[x]);
+printf("%s => %s\n", tabl->column1[x], tabl->column2[x]);
 }
 
 int main()
